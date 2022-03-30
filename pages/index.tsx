@@ -8,8 +8,7 @@ import Link from '../src/Link';
 import Button from '@mui/material/Button';
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
-import ProTip from '../src/ProTip';
-import Copyright from '../src/Copyright';
+
 
 const Home: NextPage = () => {
   const { data: session } = useSession();
@@ -37,8 +36,6 @@ const Home: NextPage = () => {
         <Link href="/about" color="secondary">
           Go to the about page
         </Link>
-        <ProTip />
-        <Copyright />
       </Box>
     </Container>
   );
