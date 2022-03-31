@@ -7,8 +7,7 @@ import Box from '@mui/material/Box';
 import Link from '../src/Link';
 import Button from '@mui/material/Button';
 import LoginIcon from '@mui/icons-material/Login';
-import LogoutIcon from '@mui/icons-material/Logout';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Home: NextPage = () => {
   const { data: session } = useSession();
@@ -30,7 +29,7 @@ const Home: NextPage = () => {
               <Button variant="outlined" startIcon={<LoginIcon />} onClick={() => signOut()} > Sair </Button>
             </>
           ) : (
-            <Button  variant="outlined" startIcon={<LogoutIcon />} onClick={() => signIn ("github")} > Entrar </Button>
+            <Button  variant="outlined" endIcon={<GitHubIcon />} onClick={() => signIn ("github")} > Logar com sua conta GitHub </Button>
             )}
         </Typography>
         <Link href="/about" color="secondary">
