@@ -1,11 +1,11 @@
 import * as React from 'react';
 import type { NextPage } from 'next';
-import SignInSide from '../src/components/Login';
+import HomeMain from '../src/components/HomeMain';
 
 const Home: NextPage = () => {
   return (
     <>
-      <SignInSide />
+      <HomeMain />
       
     </>
   );
