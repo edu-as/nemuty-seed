@@ -96,8 +96,9 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h2" noWrap component="h5">
             Nemuty Seed um app falitador
+          </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
